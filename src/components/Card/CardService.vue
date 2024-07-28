@@ -35,6 +35,8 @@ const props = defineProps({
     <p class="max-w-[300px] text-sm mx-auto">
       {{ description }}
     </p>
-    <Button class="!text-white !bg-transparent mx-auto mt-5">Learn more</Button>
+    <Button class="!text-white !bg-transparent mx-auto mt-5" arrow
+      >Learn more</Button
+    >
   </div>
 </template>

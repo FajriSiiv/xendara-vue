@@ -20,5 +20,13 @@ export default {
       sm: { max: "500px" }, // Extra small screens and down
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase, theme }) {
+      addBase({
+        body: {
+          color: theme("colors.primary"),
+        },
+      });
+    },
+  ],
 };
