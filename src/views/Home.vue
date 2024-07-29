@@ -53,7 +53,7 @@ const CardChoose = ref([
 
 <template>
   <Section>
-    <div class="flex items-start gap-14 mt-[150px] justify-between">
+    <div class="flex items-start gap-14 mt-[150px] justify-between md:mt-20">
       <div class="flex-1 flex-col flex gap-y-3 max-w-[560px]">
         <ParagraftRed>let's shift your business</ParagraftRed>
 
@@ -70,7 +70,7 @@ const CardChoose = ref([
         <Button>Get started a project</Button>
       </div>
       <div
-        class="flex-1 max-w-[450px] h-[450px] rounded-full overflow-hidden mx-auto"
+        class="flex-1 max-w-[450px] h-[450px] rounded-full overflow-hidden mx-auto md:hidden"
       >
         <img v-bind:src="People1" alt="people hero" />
       </div>
@@ -78,7 +78,7 @@ const CardChoose = ref([
   </Section>
   <!-- Service -->
   <Section>
-    <div class="flex flex-col my-[150px]">
+    <div class="flex flex-col my-[150px] sm:my-14">
       <div class="flex flex-col gap-4 justify-center items-center">
         <ParagraftRed> our service </ParagraftRed>
         <Title
@@ -106,8 +106,8 @@ const CardChoose = ref([
         />
       </div>
 
-      <div class="flex gap-16 my-20">
-        <div class="max-w-[300px] max-h-[300px] w-full h-full">
+      <div class="flex gap-16 my-20 md:flex-col">
+        <div class="max-w-[300px] max-h-[300px] w-full h-full md:mx-auto">
           <div class="h-[300px] w-[300px] overflow-hidden rounded-full">
             <img v-bind:src="People3" alt="people testimonial" />
           </div>
@@ -142,8 +142,8 @@ const CardChoose = ref([
         over again.</Title
       >
 
-      <div class="flex gap-20 my-10">
-        <div class="flex-1 mt-10">
+      <div class="flex gap-20 my-10 lg:gap-8 md:gap-5 sm:my-3">
+        <div class="flex-1 mt-10 sm:hidden">
           <div class="max-w-[500px] max-h-[500px]">
             <div class="w-full h-[500px] rounded-md relative overflow-hidden">
               <img
@@ -154,11 +154,11 @@ const CardChoose = ref([
             </div>
           </div>
         </div>
-        <div class="flex-[2] -mt-7">
-          <div class="flex flex-col gap-y-20">
+        <div class="flex-[2] -mt-7 md:flex-1">
+          <div class="flex flex-col gap-y-20 md:gap-y-5">
             <div class="flex w-full relative">
               <div
-                class="w-[330px] h-[330px] rounded-md relative overflow-hidden"
+                class="w-[330px] h-[330px] rounded-md relative overflow-hidden md:w-full"
               >
                 <img
                   v-bind:src="People3"
@@ -167,7 +167,7 @@ const CardChoose = ref([
                 />
               </div>
               <div
-                class="w-[200px] h-[200px] rounded-md absolute right-20 -bottom-10 overflow-hidden"
+                class="w-[200px] h-[200px] rounded-md absolute right-20 -bottom-10 overflow-hidden md:hidden"
               >
                 <div class="w-full h-full relative">
                   <img
@@ -189,7 +189,7 @@ const CardChoose = ref([
         </div>
       </div>
 
-      <div class="flex justify-around my-32">
+      <div class="flex justify-around my-32 lg:gap-10 sm:flex-col sm:my-8">
         <div
           class="flex flex-col gap-3 justify-center items-center max-w-[350px]"
         >
@@ -227,7 +227,7 @@ const CardChoose = ref([
       </div>
 
       <div
-        class="mt-20 grid grid-cols-2 grid-rows-2 max-w-[900px] mx-auto gap-20"
+        class="mt-20 grid grid-cols-2 grid-rows-2 max-w-[900px] mx-auto gap-20 md:flex md:flex-col"
       >
         <div
           class="flex gap-x-4 items-start"
@@ -252,7 +252,9 @@ const CardChoose = ref([
         </div>
       </div>
 
-      <div class="flex justify-between w-full mt-40 items-center">
+      <div
+        class="flex justify-between w-full mt-40 items-center lg:gap-20 md:flex-col md:mt-20"
+      >
         <div class="flex flex-col gap-y-4 max-w-[700px]">
           <h3 class="text-3xl font-bold">Ready to launch your next project?</h3>
           <p class="opacity-80">
@@ -260,7 +262,7 @@ const CardChoose = ref([
             Reprehenderit quidem repellat accusantium deleniti libero earum.
           </p>
         </div>
-        <Button>Get started a project</Button>
+        <Button class="text-nowrap">Get started a project</Button>
       </div>
     </div>
   </Section>
@@ -272,11 +274,11 @@ const CardChoose = ref([
         <Title>Our works describe why we are the best in the business</Title>
       </div>
       <div
-        class="grid grid-cols-2 grid-rows-7 gap-x-10 gap-y-3 my-10 max-w-[1020px] mx-auto"
+        class="grid grid-cols-2 grid-rows-7 gap-x-10 gap-y-3 my-10 max-w-[1020px] mx-auto sm:grid-cols-1 sm:grid-rows-4"
       >
         <div class="row-span-4 h-[600px] overflow-hidden gap-y-4 flex flex-col">
           <div class="h-[454px] w-full rounded-md overflow-hidden">
-            <img v-bind:src="Brand1" alt="brand1" />
+            <img v-bind:src="Brand1" alt="brand1" class="object-cover h-full" />
           </div>
           <div class="flex flex-col gap-1 ml-6 mt-3">
             <span class="opacity-90">Graphic Design</span>
@@ -285,7 +287,7 @@ const CardChoose = ref([
         </div>
         <div class="row-span-3 h-[400px] overflow-hidden gap-y-4 flex flex-col">
           <div class="h-[303px] w-full rounded-md overflow-hidden">
-            <img v-bind:src="Brand2" alt="brand2" />
+            <img v-bind:src="Brand2" alt="brand2" class="object-cover h-full" />
           </div>
           <div class="flex flex-col gap-1 ml-6 mt-3">
             <span class="opacity-90">Graphic Design</span>
@@ -294,7 +296,7 @@ const CardChoose = ref([
         </div>
         <div class="row-span-4 h-[600px] overflow-hidden gap-y-4 flex flex-col">
           <div class="h-[454px] w-full rounded-md overflow-hidden">
-            <img v-bind:src="Brand4" alt="brand4" class="object-bottom" />
+            <img v-bind:src="Brand4" alt="brand4" class="object-cover h-full" />
           </div>
           <div class="flex flex-col gap-1 ml-6 mt-3">
             <span class="opacity-90">Content Writting</span>
@@ -303,7 +305,7 @@ const CardChoose = ref([
         </div>
         <div class="row-span-3 h-[400px] overflow-hidden gap-y-4 flex flex-col">
           <div class="h-[303px] w-full rounded-md overflow-hidden">
-            <img v-bind:src="Brand3" alt="brand3" />
+            <img v-bind:src="Brand3" alt="brand3" class="object-cover h-full" />
           </div>
           <div class="flex flex-col gap-1 ml-6 mt-3">
             <span class="opacity-90">Website Development</span>
@@ -318,10 +320,9 @@ const CardChoose = ref([
   </Section>
   <!-- Testimonial -->
   <Section class="bg-secondary relative overflow-hidden py-20">
-    <div class="absolute left-1/5 top-0 w-full h-full">
-      <img v-bind:src="BackgroundLine" alt="background line testimonial" />
-    </div>
-    <div class="text-white flex flex-col gap-5 items-center justify-center">
+    <div
+      class="text-white flex flex-col gap-5 items-center justify-center z-10 relative"
+    >
       <ParagraftRed class="text-white">testimonial</ParagraftRed>
       <Title class="text-white text-2xl max-w-[600px]"
         >&quot;Simply the best. Better than all the rest. I'd recommend this
@@ -334,6 +335,9 @@ const CardChoose = ref([
 
         <span class="font-semibold">Morgana. S</span>
       </div>
+    </div>
+    <div class="absolute left-1/5 top-0 w-full h-full">
+      <img v-bind:src="BackgroundLine" alt="background line testimonial" />
     </div>
   </Section>
   <!-- Footer -->

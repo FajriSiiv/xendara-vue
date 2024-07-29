@@ -15,7 +15,7 @@ export default {
     screens: {
       "2xl": { max: "1535px" }, // Extra large screens and down
       xl: { max: "1440px" }, // Large screens and down
-      lg: { max: "1200px" }, // Medium screens and down
+      lg: { max: "1024px" }, // Medium screens and down
       md: { max: "768px" }, // Small screens and down
       sm: { max: "500px" }, // Extra small screens and down
     },

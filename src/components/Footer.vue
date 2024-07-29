@@ -50,7 +50,7 @@ const LinkFooter = ref([
 
 <template>
   <Section class="bg-primary text-white py-20">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center sm:flex-col sm:gap-y-10">
       <div class="flex flex-col gap-y-4">
         <Title class="text-start">Ready to launch your next project</Title>
         <p class="opacity-80">
@@ -61,7 +61,7 @@ const LinkFooter = ref([
       <Button>Get started a project</Button>
     </div>
 
-    <div class="pt-20 flex gap-10 justify-between">
+    <div class="pt-20 flex gap-10 justify-between flex-wrap">
       <div class="flex flex-col gap-y-5 max-w-[300px]">
         <Title class="text-start">Xendara.io</Title>
         <p class="opacity-80">
@@ -79,9 +79,9 @@ const LinkFooter = ref([
           </div>
         </div>
       </div>
-      <div class="w-full flex justify-between max-w-[800px]">
+      <div class="w-full flex justify-between max-w-[800px] flex-wrap gap-y-10">
         <div
-          class="flex flex-col gap-y-3"
+          class="flex flex-col gap-y-3 sm:w-[40%]"
           v-for="(item, index) in LinkFooter"
           :key="index"
         >

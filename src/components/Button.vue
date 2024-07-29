@@ -18,7 +18,7 @@ defineProps({
 <template>
   <button
     :class="[
-      'rounded-lg py-3 px-6 font-semibold w-fit h-fit',
+      'rounded-lg py-3 px-6 font-semibold w-fit h-fit text-nowrap',
       light
         ? 'bg-[#473BF0] bg-opacity-10 text-secondary'
         : 'bg-secondary text-white',
